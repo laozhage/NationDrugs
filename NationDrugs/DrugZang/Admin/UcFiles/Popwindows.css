@@ -1,0 +1,33 @@
+﻿.popupWindow
+    {
+        position:absolute;
+        left:100px;
+        top:50px;
+        width:600px;
+        border:solid 1px black;
+        padding:10px;
+        background-color:white;
+        filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color=#cccccc); 
+        display:none;
+    }
+.btnhand
+{
+    cursor: hand;
+}
+.btnHima
+{
+    font-family:Microsoft Himalaya;
+    font-size:14pt;
+    }
+ .rbtnHima
+ {
+     font-family:Microsoft Himalaya;
+     font-size:14pt;
+     
+     }
+.txtHima
+{
+    font-family:Microsoft Himalaya;
+     font-size:14pt;
+     
+    }

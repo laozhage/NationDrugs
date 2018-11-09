@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+ <div id="login">
+   <div id="top">
+		      <div id="top_left"><img src="images/login_03.gif" /></div>
+			  <div id="top_center"></div>
+	     </div>
+		 
+		 <div id="center">
+		      <div id="center_left"></div>
+			  <div id="center_middle">
+			       <div id="user"><span class="zt"><strong>用&nbsp;&nbsp;户<span lang="zh-cn">：</span></strong></span>
+                       <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+</div>
+				   <div id="password"><span class="zt"><strong>密&nbsp;&nbsp;码：</strong></span>
+                       <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+    </div>
+                   <div id="yanzhengma"><span class="zt"><strong>验证码:</strong><asp:TextBox ID="txt_checkCode" runat="server" Width="61px"></asp:TextBox>
+                       <asp:Image ID="Image1" runat="server" Height="24px" 
+                           ImageUrl="~/Log/VerifyCode.ashx" Width="74px" ImageAlign="Bottom" />
+                       <input name="buton" id="button1"  type="button" value="换一张" onclick = "getimgcode() " />
+		     </div>
+				   <div id="btn">
+                       <asp:Button ID="btn_login" runat="server" Text="登录" Width="75px" 
+                           onclick="btn_login_Click" />
+                      
+                       <asp:Button ID="btn_clear" runat="server" Text="清空" Width="75px" 
+                           onclick="btn_clear_Click" /></div>
+			  
+			  </div>
+			  <div id="center_right"></div>		 
+		 </div>
+		 <div id="down">
+		      <div id="down_left">
+			      <div id="inf">
+                       <span class="inf_text">版本信息</span>
+					   <span class="copyright">民族药资源数据库 2015 v1.0</span>
+			      </div>
+			  </div>
+			  <div id="down_center">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                      ControlToValidate="TextBox1" ErrorMessage="用户名不能为空！" ForeColor="Red"></asp:RequiredFieldValidator>
+                  <br />
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                      ControlToValidate="TextBox2" ErrorMessage="密码不能为空！" ForeColor="Red"></asp:RequiredFieldValidator>
+                  <br />
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                      ControlToValidate="txt_checkCode" ErrorMessage="验证码不能为空！" ForeColor="Red"></asp:RequiredFieldValidator>
+                  <br />
+                  <asp:Label ID="lbl_errorMessage" runat="server" ForeColor="Red" Text="验证码错误！"></asp:Label>
+                  <br />
+              </div>		 
+		 </div>
+         </div>
+</body>
+</html>

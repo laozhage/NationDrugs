@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Ulable.ascx.cs" Inherits="NationDrugs.DrugZang.Ucshared.Ulable" %>
+<asp:Label ID="Label1" runat="server" Text=""  Font-Names = "Microsoft Himalaya" Font-Size = "17pt" ></asp:Label>

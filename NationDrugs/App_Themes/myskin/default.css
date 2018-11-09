@@ -1,0 +1,108 @@
+﻿BODY
+{
+	border-style: none;
+	background-color:#e7eaf1;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	line-height: 130%;
+	text-align: left;
+	background: #e7eaf1 left top;
+	color: #000000;
+}
+
+.title
+{
+	background-color: #588fc7;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: bold;
+	width:100%;
+}
+A:link
+{
+	color: #003399;
+	text-decoration: none;
+}
+A:visited
+{
+	color: #003399;
+	text-decoration: none;
+}
+A:hover
+{
+	color: #ff3300;
+	text-decoration: none;
+}
+TD, TH
+{
+	font-size: 9pt;
+}
+.but_54
+{
+	border-style: none;
+	padding: 5px;
+	background: url(images/but_54_3.gif) no-repeat center 50%;
+	margin: 0px;
+	color: #000000;
+	text-align: center;
+}
+	
+.current
+ {
+	font-weight: bolder;
+	font-size:13pt;
+	color: Blue;
+	border-bottom: solid 1px #F1F1F1;
+	background: url( "images/label/OrderList.gif" ) no-repeat left top;
+	background-position: 0% -42px;
+
+}
+.rank
+{
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+}
+.tabs
+ {
+    font-weight  : bolder;
+	border-bottom: solid 1px #F1F1F1;
+	background:  no-repeat left top;
+	background-position: 0% -42px;
+}
+.div.navigation
+{
+    padding: 6px;
+    background-color: #588fc7;
+    text-align: left;
+    font-weight: bold;
+    color: White;
+    border-bottom-width: 20px;
+    border-bottom-color: Gray;
+}
+div.divname
+{
+    height: 18px;
+    line-height: 18px;
+}
+div.bigdvs
+{
+    width: 352px;
+    height: 288px;
+    cursor: hand;
+    margin: 10px;
+    border: 0px;
+}
+div.smalldvs
+{
+    width: 180px;
+    height: 135px;
+    cursor: hand;
+    border: solid 2px #cccc99;
+}
+span.back
+{
+    font-weight: bold;
+    color: White;
+}

@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56B5AEC4-7368-4F9A-AE72-301B9805DB08}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NationDrugs</RootNamespace>
+    <AssemblyName>NationDrugs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\myskin\default.css" />
+    <Content Include="App_Themes\myskin\Graphic.css" />
+    <Content Include="App_Themes\myskin\images\but_54_3.gif" />
+    <Content Include="App_Themes\myskin\images\tabrightB.gif" />
+    <Content Include="App_Themes\myskin\images\中文.jpg" />
+    <Content Include="App_Themes\myskin\images\维文.jpg" />
+    <Content Include="App_Themes\myskin\images\蒙文.jpg" />
+    <Content Include="App_Themes\myskin\images\藏文.jpg" />
+    <Content Include="Cjs\imagejs\jquery-1.4.2.min.js" />
+    <Content Include="Cjs\imagejs\jquery.imagezoom.min.js" />
+    <Content Include="Cjs\imagejs\ms.js" />
+    <Content Include="Cjs\My97DatePicker\calendar.js" />
+    <Content Include="Cjs\My97DatePicker\lang\en.js" />
+    <Content Include="Cjs\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Cjs\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Cjs\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Cjs\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Cjs\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Cjs\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Cjs\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Cjs\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Cjs\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Cjs\My97DatePicker\WdatePicker.js" />
+    <Content Include="Cjs\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="Cjs\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="Cjs\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="Cjs\My97DatePicker\开发包\readme.txt" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Cjs\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Cjs\TextValidator\detect.js" />
+    <Content Include="Cjs\TextValidator\eventutil.js" />
+    <Content Include="Cjs\TextValidator\textutil.js" />
+    <Content Include="DrugHan\Admin\AdWeb\ACharacter.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\AChemistry.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\AHeredity.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\APassport.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\Apreparation.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\AReference.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\AResearch.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\ARights.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\AShared.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\ASourceImage.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\ASourceImages.aspx" />
+    <Content Include="DrugHan\Admin\AdWeb\ResponseImage.aspx" />
+    <Content Include="DrugHan\Admin\UcFiles\Popwindows.css" />
+    <Content Include="DrugHan\Admin\UcFiles\ucCharacter.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcChemistry.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcDDRright.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcHeredity.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\Ucpassport.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\Ucpreparation.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcReference.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcResearch.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcResourceImage.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcRight.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcShare.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcUser.ascx" />
+    <Content Include="DrugHan\Admin\UcFiles\UcUserNew.ascx" />
+    <Content Include="DrugHan\Admin\UserModi\ModiPass.aspx" />
+    <Content Include="DrugHan\Admin\UserModi\UserNew.aspx" />
+    <Content Include="DrugHan\Admin\WebImage\kuang.gif" />
+    <Content Include="DrugHan\Admin\WebImage\left1.gif" />
+    <Content Include="DrugHan\Admin\WebImage\left2.gif" />
+    <Content Include="DrugHan\Admin\WebImage\left3.gif" />
+    <Content Include="DrugHan\Admin\WebImage\right1.gif" />
+    <Content Include="DrugHan\Admin\WebImage\right2.gif" />
+    <Content Include="DrugHan\Admin\WebImage\right3.gif" />
+    <Content Include="DrugHan\Client\browsImage.aspx" />
+    <Content Include="DrugHan\Client\findDrug.aspx" />
+    <Content Include="DrugHan\Ucshared\BigImage.ascx" />
+    <Content Include="DrugHan\Ucshared\CharText.ascx" />
+    <Content Include="DrugHan\Ucshared\CharTextRequired.ascx" />
+    <Content Include="DrugHan\Ucshared\DigitalOnlyTxt.ascx" />
+    <Content Include="DrugHan\Ucshared\FloatDigitalOnlyText.ascx" />
+    <Content Include="DrugHan\Ucshared\latitudeOnlyText.ascx" />
+    <Content Include="DrugHan\Ucshared\RichText.ascx" />
+    <Content Include="DrugHan\Ucshared\UcCalendar.ascx" />
+    <Content Include="DrugHan\Ucshared\Ulable.ascx" />
+    <Content Include="DrugWei\Admin\AdWeb\ACharacter.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\AChemistry.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\AHeredity.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\APassport.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\Apreparation.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\AReference.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\AResearch.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\ARights.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\AShared.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\ASourceImage.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\ASourceImages.aspx" />
+    <Content Include="DrugWei\Admin\AdWeb\ResponseImage.aspx" />
+    <Content Include="DrugWei\Admin\UcFiles\Popwindows.css" />
+    <Content Include="DrugWei\Admin\UcFiles\ucCharacter.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcChemistry.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcDDRright.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcHeredity.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\Ucpassport.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\Ucpreparation.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcReference.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcResearch.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcResourceImage.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcRight.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcShare.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcUser.ascx" />
+    <Content Include="DrugWei\Admin\UcFiles\UcUserNew.ascx" />
+    <Content Include="DrugWei\Admin\UploadImages\201504201538223822.png" />
+    <Content Include="DrugWei\Admin\UploadImages\201504201538513851.png" />
+    <Content Include="DrugWei\Admin\UploadImages\201505061541244124.png" />
+    <Content Include="DrugWei\Admin\UploadImages\201505061541354135.png" />
+    <Content Include="DrugWei\Admin\UploadImages\201505061541494149.png" />
+    <Content Include="DrugWei\Admin\UserModi\ModiPass.aspx" />
+    <Content Include="DrugWei\Admin\UserModi\UserNew.aspx" />
+    <Content Include="DrugWei\Admin\WebImage\kuang.gif" />
+    <Content Include="DrugWei\Admin\WebImage\kuang2.jpg" />
+    <Content Include="DrugWei\Admin\WebImage\left1.gif" />
+    <Content Include="DrugWei\Admin\WebImage\left2.gif" />
+    <Content Include="DrugWei\Admin\WebImage\left3.gif" />
+    <Content Include="DrugWei\Admin\WebImage\right1.gif" />
+    <Content Include="DrugWei\Admin\WebImage\right2.gif" />
+    <Content Include="DrugWei\Admin\WebImage\right3.gif" />
+    <Content Include="DrugWei\Client\browsImage.aspx" />
+    <Content Include="DrugWei\Client\findDrug.aspx" />
+    <Content Include="DrugWei\Ucshared\BigImage.ascx" />
+    <Content Include="DrugWei\Ucshared\CharText.ascx" />
+    <Content Include="DrugWei\Ucshared\CharTextRequired.ascx" />
+    <Content Include="DrugWei\Ucshared\DigitalOnlyTxt.ascx" />
+    <Content Include="DrugWei\Ucshared\FloatDigitalOnlyText.ascx" />
+    <Content Include="DrugWei\Ucshared\latitudeOnlyText.ascx" />
+    <Content Include="DrugWei\Ucshared\RichText.ascx" />
+    <Content Include="DrugWei\Ucshared\UcCalendar.ascx" />
+    <Content Include="DrugWei\Ucshared\Ulable.ascx" />
+    <Content Include="DrugZang\Admin\AdWeb\ACharacter.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\AChemistry.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\AHeredity.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\APassport.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\Apreparation.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\AReference.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\AResearch.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\ARights.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\AShared.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\ASourceImage.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\ASourceImages.aspx" />
+    <Content Include="DrugZang\Admin\AdWeb\ResponseImage.aspx" />
+    <Content Include="DrugZang\Admin\SourceImages\201505060955185518.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505060957335733.png" />
+    <Content Include="DrugZang\Admin\SourceImages\2015050613020323.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061641184118.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061641234123.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061641404140.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061641484148.png" />
+    <Content Include="DrugZang\Admin\SourceImages\20150506164204424.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061642114211.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061642334233.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061642554255.png" />
+    <Content Include="DrugZang\Admin\SourceImages\20150506164303433.png" />
+    <Content Include="DrugZang\Admin\SourceImages\20150506164309439.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061643164316.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061643394339.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061643554355.png" />
+    <Content Include="DrugZang\Admin\SourceImages\20150506164402442.png" />
+    <Content Include="DrugZang\Admin\SourceImages\20150506164408448.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061644174417.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061644284428.png" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061644364436.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061644454445.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061644524452.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\20150506164503453.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061645104510.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061645174517.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061645284528.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061645374537.jpg" />
+    <Content Include="DrugZang\Admin\SourceImages\201505061645454545.jpg" />
+    <Content Include="DrugZang\Admin\UcFiles\Popwindows.css" />
+    <Content Include="DrugZang\Admin\UcFiles\ucCharacter.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcChemistry.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcDDRright.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcHeredity.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\Ucpassport.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\Ucpreparation.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcReference.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcResearch.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcResourceImage.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcRight.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcShare.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcUser.ascx" />
+    <Content Include="DrugZang\Admin\UcFiles\UcUserNew.ascx" />
+    <Content Include="DrugZang\Admin\UploadImages\201504201538223822.png" />
+    <Content Include="DrugZang\Admin\UploadImages\201504201538513851.png" />
+    <Content Include="DrugZang\Admin\UploadImages\201505061541244124.png" />
+    <Content Include="DrugZang\Admin\UploadImages\201505061541354135.png" />
+    <Content Include="DrugZang\Admin\UploadImages\201505061541494149.png" />
+    <Content Include="DrugZang\Admin\UserModi\ModiPass.aspx" />
+    <Content Include="DrugZang\Admin\UserModi\UserNew.aspx" />
+    <Content Include="DrugZang\Admin\WebImage\kuang.gif" />
+    <Content Include="DrugZang\Admin\WebImage\kuang2.jpg" />
+    <Content Include="DrugZang\Admin\WebImage\left1.gif" />
+    <Content Include="DrugZang\Admin\WebImage\left2.gif" />
+    <Content Include="DrugZang\Admin\WebImage\left3.gif" />
+    <Content Include="DrugZang\Admin\WebImage\right1.gif" />
+    <Content Include="DrugZang\Admin\WebImage\right2.gif" />
+    <Content Include="DrugZang\Admin\WebImage\right3.gif" />
+    <Content Include="DrugZang\Client\findDrug.aspx" />
+    <Content Include="DrugZang\Ucshared\BigImage.ascx" />
+    <Content Include="DrugZang\Ucshared\CharText.ascx" />
+    <Content Include="DrugZang\Ucshared\CharTextRequired.ascx" />
+    <Content Include="DrugZang\Ucshared\DigitalOnlyTxt.ascx" />
+    <Content Include="DrugZang\Ucshared\FloatDigitalOnlyText.ascx" />
+    <Content Include="DrugZang\Ucshared\gvPage.ascx" />
+    <Content Include="DrugZang\Ucshared\latitudeOnlyText.ascx" />
+    <Content Include="DrugZang\Ucshared\RichText.ascx" />
+    <Content Include="DrugZang\Ucshared\UcCalendar.ascx" />
+    <Content Include="DrugZang\Ucshared\Ulable.ascx" />
+    <Content Include="images\0_status.gif" />
+    <Content Include="images\1_status.gif" />
+    <Content Include="Log\images\bg1.jpg" />
+    <Content Include="Log\images\login.css" />
+    <Content Include="Log\images\login\code.gif" />
+    <Content Include="Log\images\login\log.png" />
+    <Content Include="Log\images\login\NTDruglogin_01.gif" />
+    <Content Include="Log\images\login\NTDruglogin_02.gif" />
+    <Content Include="Log\images\login\NTDruglogin_03.gif" />
+    <Content Include="Log\images\login\NTDruglogin_04.gif" />
+    <Content Include="Log\images\login\NTDruglogin_05.gif" />
+    <Content Include="Log\images\login\NTDruglogin_06.gif" />
+    <Content Include="Log\images\login\NTDruglogin_07.gif" />
+    <Content Include="Log\images\login\NTDruglogin_08.gif" />
+    <Content Include="Log\images\login\NTDruglogin_09.gif" />
+    <Content Include="Log\images\login\NTDruglogin_10.gif" />
+    <Content Include="Log\images\login\NTDruglogin_11.gif" />
+    <Content Include="Log\images\login\NTDruglogin_12.gif" />
+    <Content Include="Log\images\login\NTDruglogin_13.gif" />
+    <Content Include="Log\images\login\NTDruglogin_14.gif" />
+    <Content Include="Log\images\login\NTDruglogin_15.jpg" />
+    <Content Include="Log\images\login\reset.png" />
+    <Content Include="Log\images\login\split.gif" />
+    <Content Include="Log\images\login\分隔符.gif" />
+    <Content Include="Log\images\login_03.gif" />
+    <Content Include="Log\images\login_05.gif" />
+    <Content Include="Log\images\login_09.gif" />
+    <Content Include="Log\images\login_11.gif" />
+    <Content Include="Log\images\login_13.gif" />
+    <Content Include="Log\images\login_16.gif" />
+    <Content Include="Log\images\login_18.gif" />
+    <Content Include="Log\images\menuimg\1.gif" />
+    <Content Include="Log\images\top.jpg" />
+    <Content Include="Log\bottom.aspx" />
+    <Content Include="Log\images\welcome\Welcome_01.gif" />
+    <Content Include="Log\images\welcome\Welcome_02.gif" />
+    <Content Include="Log\images\welcome\Welcome_03.gif" />
+    <Content Include="Log\images\welcome\Welcome_04.gif" />
+    <Content Include="Log\images\welcome\Welcome_05.gif" />
+    <Content Include="Log\images\welcome\Welcome_06.gif" />
+    <Content Include="Log\images\welcome\Welcome_07.gif" />
+    <Content Include="Log\index.aspx" />
+    <Content Include="Log\left.aspx" />
+    <Content Include="Log\leftMenu.aspx" />
+    <Content Include="Log\log.htm" />
+    <Content Include="Log\login.aspx" />
+    <Content Include="Log\main.aspx" />
+    <Content Include="Log\middle.aspx" />
+    <Content Include="Log\top.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebS\WebSHan.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseOption\cCharacter.cs" />
+    <Compile Include="BaseOption\cChemistry.cs" />
+    <Compile Include="BaseOption\cHeredity.cs" />
+    <Compile Include="BaseOption\cpassport.cs" />
+    <Compile Include="BaseOption\cpreparation.cs" />
+    <Compile Include="BaseOption\cQuery.cs" />
+    <Compile Include="BaseOption\cReference.cs" />
+    <Compile Include="BaseOption\cResearch.cs" />
+    <Compile Include="BaseOption\cRightss.cs" />
+    <Compile Include="BaseOption\cShared.cs" />
+    <Compile Include="BaseOption\cSourceImage.cs" />
+    <Compile Include="BaseOption\cUser.cs" />
+    <Compile Include="BaseOption\Entry.cs" />
+    <Compile Include="BaseOption\HostAdd.cs" />
+    <Compile Include="BaseOption\Script.cs" />
+    <Compile Include="BaseOption\SqlHelper.cs" />
+    <Compile Include="DrugHan\Admin\AdWeb\ACharacter.aspx.cs">
+      <DependentUpon>ACharacter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ACharacter.aspx.designer.cs">
+      <DependentUpon>ACharacter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AChemistry.aspx.cs">
+      <DependentUpon>AChemistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AChemistry.aspx.designer.cs">
+      <DependentUpon>AChemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AHeredity.aspx.cs">
+      <DependentUpon>AHeredity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AHeredity.aspx.designer.cs">
+      <DependentUpon>AHeredity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\APassport.aspx.cs">
+      <DependentUpon>APassport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\APassport.aspx.designer.cs">
+      <DependentUpon>APassport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\Apreparation.aspx.cs">
+      <DependentUpon>Apreparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\Apreparation.aspx.designer.cs">
+      <DependentUpon>Apreparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AReference.aspx.cs">
+      <DependentUpon>AReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AReference.aspx.designer.cs">
+      <DependentUpon>AReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AResearch.aspx.cs">
+      <DependentUpon>AResearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AResearch.aspx.designer.cs">
+      <DependentUpon>AResearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ARights.aspx.cs">
+      <DependentUpon>ARights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ARights.aspx.designer.cs">
+      <DependentUpon>ARights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AShared.aspx.cs">
+      <DependentUpon>AShared.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\AShared.aspx.designer.cs">
+      <DependentUpon>AShared.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ASourceImage.aspx.cs">
+      <DependentUpon>ASourceImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ASourceImage.aspx.designer.cs">
+      <DependentUpon>ASourceImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ASourceImages.aspx.cs">
+      <DependentUpon>ASourceImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ASourceImages.aspx.designer.cs">
+      <DependentUpon>ASourceImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ResponseImage.aspx.cs">
+      <DependentUpon>ResponseImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\AdWeb\ResponseImage.aspx.designer.cs">
+      <DependentUpon>ResponseImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\ucCharacter.ascx.cs">
+      <DependentUpon>ucCharacter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\ucCharacter.ascx.designer.cs">
+      <DependentUpon>ucCharacter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcChemistry.ascx.cs">
+      <DependentUpon>UcChemistry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcChemistry.ascx.designer.cs">
+      <DependentUpon>UcChemistry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcDDRright.ascx.cs">
+      <DependentUpon>UcDDRright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcDDRright.ascx.designer.cs">
+      <DependentUpon>UcDDRright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcHeredity.ascx.cs">
+      <DependentUpon>UcHeredity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcHeredity.ascx.designer.cs">
+      <DependentUpon>UcHeredity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\Ucpassport.ascx.cs">
+      <DependentUpon>Ucpassport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\Ucpassport.ascx.designer.cs">
+      <DependentUpon>Ucpassport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\Ucpreparation.ascx.cs">
+      <DependentUpon>Ucpreparation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\Ucpreparation.ascx.designer.cs">
+      <DependentUpon>Ucpreparation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcReference.ascx.cs">
+      <DependentUpon>UcReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcReference.ascx.designer.cs">
+      <DependentUpon>UcReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcResearch.ascx.cs">
+      <DependentUpon>UcResearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcResearch.ascx.designer.cs">
+      <DependentUpon>UcResearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcResourceImage.ascx.cs">
+      <DependentUpon>UcResourceImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcResourceImage.ascx.designer.cs">
+      <DependentUpon>UcResourceImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcRight.ascx.cs">
+      <DependentUpon>UcRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcRight.ascx.designer.cs">
+      <DependentUpon>UcRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcShare.ascx.cs">
+      <DependentUpon>UcShare.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcShare.ascx.designer.cs">
+      <DependentUpon>UcShare.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcUser.ascx.cs">
+      <DependentUpon>UcUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcUser.ascx.designer.cs">
+      <DependentUpon>UcUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcUserNew.ascx.cs">
+      <DependentUpon>UcUserNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UcFiles\UcUserNew.ascx.designer.cs">
+      <DependentUpon>UcUserNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UserModi\ModiPass.aspx.cs">
+      <DependentUpon>ModiPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UserModi\ModiPass.aspx.designer.cs">
+      <DependentUpon>ModiPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UserModi\UserNew.aspx.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Admin\UserModi\UserNew.aspx.designer.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Client\browsImage.aspx.cs">
+      <DependentUpon>browsImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Client\browsImage.aspx.designer.cs">
+      <DependentUpon>browsImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Client\findDrug.aspx.cs">
+      <DependentUpon>findDrug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Client\findDrug.aspx.designer.cs">
+      <DependentUpon>findDrug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\BigImage.ascx.cs">
+      <DependentUpon>BigImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\BigImage.ascx.designer.cs">
+      <DependentUpon>BigImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\CharText.ascx.cs">
+      <DependentUpon>CharText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\CharText.ascx.designer.cs">
+      <DependentUpon>CharText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\CharTextRequired.ascx.cs">
+      <DependentUpon>CharTextRequired.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\CharTextRequired.ascx.designer.cs">
+      <DependentUpon>CharTextRequired.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\DigitalOnlyTxt.ascx.cs">
+      <DependentUpon>DigitalOnlyTxt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\DigitalOnlyTxt.ascx.designer.cs">
+      <DependentUpon>DigitalOnlyTxt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\FloatDigitalOnlyText.ascx.cs">
+      <DependentUpon>FloatDigitalOnlyText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\FloatDigitalOnlyText.ascx.designer.cs">
+      <DependentUpon>FloatDigitalOnlyText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\latitudeOnlyText.ascx.cs">
+      <DependentUpon>latitudeOnlyText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\latitudeOnlyText.ascx.designer.cs">
+      <DependentUpon>latitudeOnlyText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\RichText.ascx.cs">
+      <DependentUpon>RichText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\RichText.ascx.designer.cs">
+      <DependentUpon>RichText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\UcCalendar.ascx.cs">
+      <DependentUpon>UcCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\UcCalendar.ascx.designer.cs">
+      <DependentUpon>UcCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\Ulable.ascx.cs">
+      <DependentUpon>Ulable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugHan\Ucshared\Ulable.ascx.designer.cs">
+      <DependentUpon>Ulable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ACharacter.aspx.cs">
+      <DependentUpon>ACharacter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ACharacter.aspx.designer.cs">
+      <DependentUpon>ACharacter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AChemistry.aspx.cs">
+      <DependentUpon>AChemistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AChemistry.aspx.designer.cs">
+      <DependentUpon>AChemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AHeredity.aspx.cs">
+      <DependentUpon>AHeredity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AHeredity.aspx.designer.cs">
+      <DependentUpon>AHeredity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\APassport.aspx.cs">
+      <DependentUpon>APassport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\APassport.aspx.designer.cs">
+      <DependentUpon>APassport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\Apreparation.aspx.cs">
+      <DependentUpon>Apreparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\Apreparation.aspx.designer.cs">
+      <DependentUpon>Apreparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AReference.aspx.cs">
+      <DependentUpon>AReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AReference.aspx.designer.cs">
+      <DependentUpon>AReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AResearch.aspx.cs">
+      <DependentUpon>AResearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AResearch.aspx.designer.cs">
+      <DependentUpon>AResearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ARights.aspx.cs">
+      <DependentUpon>ARights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ARights.aspx.designer.cs">
+      <DependentUpon>ARights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AShared.aspx.cs">
+      <DependentUpon>AShared.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\AShared.aspx.designer.cs">
+      <DependentUpon>AShared.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ASourceImage.aspx.cs">
+      <DependentUpon>ASourceImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ASourceImage.aspx.designer.cs">
+      <DependentUpon>ASourceImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ASourceImages.aspx.cs">
+      <DependentUpon>ASourceImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ASourceImages.aspx.designer.cs">
+      <DependentUpon>ASourceImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ResponseImage.aspx.cs">
+      <DependentUpon>ResponseImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\AdWeb\ResponseImage.aspx.designer.cs">
+      <DependentUpon>ResponseImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\ucCharacter.ascx.cs">
+      <DependentUpon>ucCharacter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\ucCharacter.ascx.designer.cs">
+      <DependentUpon>ucCharacter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcChemistry.ascx.cs">
+      <DependentUpon>UcChemistry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcChemistry.ascx.designer.cs">
+      <DependentUpon>UcChemistry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcDDRright.ascx.cs">
+      <DependentUpon>UcDDRright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcDDRright.ascx.designer.cs">
+      <DependentUpon>UcDDRright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcHeredity.ascx.cs">
+      <DependentUpon>UcHeredity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcHeredity.ascx.designer.cs">
+      <DependentUpon>UcHeredity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\Ucpassport.ascx.cs">
+      <DependentUpon>Ucpassport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\Ucpassport.ascx.designer.cs">
+      <DependentUpon>Ucpassport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\Ucpreparation.ascx.cs">
+      <DependentUpon>Ucpreparation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\Ucpreparation.ascx.designer.cs">
+      <DependentUpon>Ucpreparation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcReference.ascx.cs">
+      <DependentUpon>UcReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcReference.ascx.designer.cs">
+      <DependentUpon>UcReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcResearch.ascx.cs">
+      <DependentUpon>UcResearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcResearch.ascx.designer.cs">
+      <DependentUpon>UcResearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcResourceImage.ascx.cs">
+      <DependentUpon>UcResourceImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcResourceImage.ascx.designer.cs">
+      <DependentUpon>UcResourceImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcRight.ascx.cs">
+      <DependentUpon>UcRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcRight.ascx.designer.cs">
+      <DependentUpon>UcRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcShare.ascx.cs">
+      <DependentUpon>UcShare.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcShare.ascx.designer.cs">
+      <DependentUpon>UcShare.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcUser.ascx.cs">
+      <DependentUpon>UcUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcUser.ascx.designer.cs">
+      <DependentUpon>UcUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcUserNew.ascx.cs">
+      <DependentUpon>UcUserNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UcFiles\UcUserNew.ascx.designer.cs">
+      <DependentUpon>UcUserNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UserModi\ModiPass.aspx.cs">
+      <DependentUpon>ModiPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UserModi\ModiPass.aspx.designer.cs">
+      <DependentUpon>ModiPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UserModi\UserNew.aspx.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Admin\UserModi\UserNew.aspx.designer.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Client\browsImage.aspx.cs">
+      <DependentUpon>browsImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Client\browsImage.aspx.designer.cs">
+      <DependentUpon>browsImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Client\findDrug.aspx.cs">
+      <DependentUpon>findDrug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Client\findDrug.aspx.designer.cs">
+      <DependentUpon>findDrug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\BigImage.ascx.cs">
+      <DependentUpon>BigImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\BigImage.ascx.designer.cs">
+      <DependentUpon>BigImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\CharText.ascx.cs">
+      <DependentUpon>CharText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\CharText.ascx.designer.cs">
+      <DependentUpon>CharText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\CharTextRequired.ascx.cs">
+      <DependentUpon>CharTextRequired.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\CharTextRequired.ascx.designer.cs">
+      <DependentUpon>CharTextRequired.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\DigitalOnlyTxt.ascx.cs">
+      <DependentUpon>DigitalOnlyTxt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\DigitalOnlyTxt.ascx.designer.cs">
+      <DependentUpon>DigitalOnlyTxt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\FloatDigitalOnlyText.ascx.cs">
+      <DependentUpon>FloatDigitalOnlyText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\FloatDigitalOnlyText.ascx.designer.cs">
+      <DependentUpon>FloatDigitalOnlyText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\latitudeOnlyText.ascx.cs">
+      <DependentUpon>latitudeOnlyText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\latitudeOnlyText.ascx.designer.cs">
+      <DependentUpon>latitudeOnlyText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\RichText.ascx.cs">
+      <DependentUpon>RichText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\RichText.ascx.designer.cs">
+      <DependentUpon>RichText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\UcCalendar.ascx.cs">
+      <DependentUpon>UcCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\UcCalendar.ascx.designer.cs">
+      <DependentUpon>UcCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\Ulable.ascx.cs">
+      <DependentUpon>Ulable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugWei\Ucshared\Ulable.ascx.designer.cs">
+      <DependentUpon>Ulable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ACharacter.aspx.cs">
+      <DependentUpon>ACharacter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ACharacter.aspx.designer.cs">
+      <DependentUpon>ACharacter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AChemistry.aspx.cs">
+      <DependentUpon>AChemistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AChemistry.aspx.designer.cs">
+      <DependentUpon>AChemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AHeredity.aspx.cs">
+      <DependentUpon>AHeredity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AHeredity.aspx.designer.cs">
+      <DependentUpon>AHeredity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\APassport.aspx.cs">
+      <DependentUpon>APassport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\APassport.aspx.designer.cs">
+      <DependentUpon>APassport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\Apreparation.aspx.cs">
+      <DependentUpon>Apreparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\Apreparation.aspx.designer.cs">
+      <DependentUpon>Apreparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AReference.aspx.cs">
+      <DependentUpon>AReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AReference.aspx.designer.cs">
+      <DependentUpon>AReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AResearch.aspx.cs">
+      <DependentUpon>AResearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AResearch.aspx.designer.cs">
+      <DependentUpon>AResearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ARights.aspx.cs">
+      <DependentUpon>ARights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ARights.aspx.designer.cs">
+      <DependentUpon>ARights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AShared.aspx.cs">
+      <DependentUpon>AShared.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\AShared.aspx.designer.cs">
+      <DependentUpon>AShared.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ASourceImage.aspx.cs">
+      <DependentUpon>ASourceImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ASourceImage.aspx.designer.cs">
+      <DependentUpon>ASourceImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ASourceImages.aspx.cs">
+      <DependentUpon>ASourceImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ASourceImages.aspx.designer.cs">
+      <DependentUpon>ASourceImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ResponseImage.aspx.cs">
+      <DependentUpon>ResponseImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\AdWeb\ResponseImage.aspx.designer.cs">
+      <DependentUpon>ResponseImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\ucCharacter.ascx.cs">
+      <DependentUpon>ucCharacter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\ucCharacter.ascx.designer.cs">
+      <DependentUpon>ucCharacter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcChemistry.ascx.cs">
+      <DependentUpon>UcChemistry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcChemistry.ascx.designer.cs">
+      <DependentUpon>UcChemistry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcDDRright.ascx.cs">
+      <DependentUpon>UcDDRright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcDDRright.ascx.designer.cs">
+      <DependentUpon>UcDDRright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcHeredity.ascx.cs">
+      <DependentUpon>UcHeredity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcHeredity.ascx.designer.cs">
+      <DependentUpon>UcHeredity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\Ucpassport.ascx.cs">
+      <DependentUpon>Ucpassport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\Ucpassport.ascx.designer.cs">
+      <DependentUpon>Ucpassport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\Ucpreparation.ascx.cs">
+      <DependentUpon>Ucpreparation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\Ucpreparation.ascx.designer.cs">
+      <DependentUpon>Ucpreparation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcReference.ascx.cs">
+      <DependentUpon>UcReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcReference.ascx.designer.cs">
+      <DependentUpon>UcReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcResearch.ascx.cs">
+      <DependentUpon>UcResearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcResearch.ascx.designer.cs">
+      <DependentUpon>UcResearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcResourceImage.ascx.cs">
+      <DependentUpon>UcResourceImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcResourceImage.ascx.designer.cs">
+      <DependentUpon>UcResourceImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcRight.ascx.cs">
+      <DependentUpon>UcRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcRight.ascx.designer.cs">
+      <DependentUpon>UcRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcShare.ascx.cs">
+      <DependentUpon>UcShare.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcShare.ascx.designer.cs">
+      <DependentUpon>UcShare.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcUser.ascx.cs">
+      <DependentUpon>UcUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcUser.ascx.designer.cs">
+      <DependentUpon>UcUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcUserNew.ascx.cs">
+      <DependentUpon>UcUserNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UcFiles\UcUserNew.ascx.designer.cs">
+      <DependentUpon>UcUserNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UserModi\ModiPass.aspx.cs">
+      <DependentUpon>ModiPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UserModi\ModiPass.aspx.designer.cs">
+      <DependentUpon>ModiPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UserModi\UserNew.aspx.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Admin\UserModi\UserNew.aspx.designer.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Client\findDrug.aspx.cs">
+      <DependentUpon>findDrug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Client\findDrug.aspx.designer.cs">
+      <DependentUpon>findDrug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\BigImage.ascx.cs">
+      <DependentUpon>BigImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\BigImage.ascx.designer.cs">
+      <DependentUpon>BigImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\CharText.ascx.cs">
+      <DependentUpon>CharText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\CharText.ascx.designer.cs">
+      <DependentUpon>CharText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\CharTextRequired.ascx.cs">
+      <DependentUpon>CharTextRequired.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\CharTextRequired.ascx.designer.cs">
+      <DependentUpon>CharTextRequired.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\DigitalOnlyTxt.ascx.cs">
+      <DependentUpon>DigitalOnlyTxt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\DigitalOnlyTxt.ascx.designer.cs">
+      <DependentUpon>DigitalOnlyTxt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\FloatDigitalOnlyText.ascx.cs">
+      <DependentUpon>FloatDigitalOnlyText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\FloatDigitalOnlyText.ascx.designer.cs">
+      <DependentUpon>FloatDigitalOnlyText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\gvPage.ascx.cs">
+      <DependentUpon>gvPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\gvPage.ascx.designer.cs">
+      <DependentUpon>gvPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\latitudeOnlyText.ascx.cs">
+      <DependentUpon>latitudeOnlyText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\latitudeOnlyText.ascx.designer.cs">
+      <DependentUpon>latitudeOnlyText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\RichText.ascx.cs">
+      <DependentUpon>RichText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\RichText.ascx.designer.cs">
+      <DependentUpon>RichText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\UcCalendar.ascx.cs">
+      <DependentUpon>UcCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\UcCalendar.ascx.designer.cs">
+      <DependentUpon>UcCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\Ulable.ascx.cs">
+      <DependentUpon>Ulable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrugZang\Ucshared\Ulable.ascx.designer.cs">
+      <DependentUpon>Ulable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\bottom.aspx.cs">
+      <DependentUpon>bottom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\bottom.aspx.designer.cs">
+      <DependentUpon>bottom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\leftMenu.aspx.cs">
+      <DependentUpon>leftMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\leftMenu.aspx.designer.cs">
+      <DependentUpon>leftMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\middle.aspx.cs">
+      <DependentUpon>middle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\middle.aspx.designer.cs">
+      <DependentUpon>middle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\VerifyCode.ashx.cs">
+      <DependentUpon>VerifyCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebS\WebSHan.asmx.cs">
+      <DependentUpon>WebSHan.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DrugHan\Admin\SourceImages\" />
+    <Folder Include="DrugHan\Admin\UploadImages\" />
+    <Folder Include="DrugMeng\" />
+    <Folder Include="DrugWei\Admin\SourceImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Log\logout.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Log\VerifyCode.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17559</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
